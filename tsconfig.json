@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                     // JavaScriptのバージョンをES6に設定
+    "module": "commonjs",                 // モジュールシステムはCommonJSを使用
+    "rootDir": "./src",                   // TypeScriptファイルのルートディレクトリ
+    "outDir": "./dist",                   // コンパイル後のファイルを出力するディレクトリ
+    "strict": true,                       // 厳密な型チェックを有効にする
+    "esModuleInterop": true               // ESモジュールの互換性
+  },
+  "include": ["src/**/*"]                 // srcディレクトリ内の全てのTypeScriptファイルを含む
+}
