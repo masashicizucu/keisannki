@@ -5,6 +5,7 @@ const counterElement = document.getElementById('counter') as HTMLElement;
 const incrementButton = document.getElementById('increment') as HTMLButtonElement;
 const decrementButton = document.getElementById('decrement') as HTMLButtonElement;
 const multipleButton = document.getElementById('multiple') as HTMLButtonElement;
+const resetButton = document.getElementById('rest') as HTMLButtonElement;
 
 function updateCounter() {
     counterElement.textContent = count.toString();
@@ -23,6 +24,12 @@ decrementButton.addEventListener('click', () => {
 
 multipleButton.addEventListener('click', () => {
     count = count*2 ;
+    updateCounter();
+}
+)
+
+resetButton.addEventListener('click', () => {
+    count = 0 ;
     updateCounter();
 }
 )
