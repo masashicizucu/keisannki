@@ -4,6 +4,7 @@ let count : number = 0;
 const counterElement = document.getElementById('counter') as HTMLElement;
 const incrementButton = document.getElementById('increment') as HTMLButtonElement;
 const decrementButton = document.getElementById('decrement') as HTMLButtonElement;
+const multipleButton = document.getElementById('multiple') as HTMLButtonElement;
 
 function updateCounter() {
     counterElement.textContent = count.toString();
@@ -16,6 +17,12 @@ incrementButton.addEventListener('click', () => {
 
 decrementButton.addEventListener('click', () => {
     count--;
+    updateCounter();
+}
+)
+
+multipleButton.addEventListener('click', () => {
+    count = count*2 ;
     updateCounter();
 }
 )
